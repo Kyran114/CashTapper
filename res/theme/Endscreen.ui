@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Endscreen" cloudDestinationProperty="Endscreen" layout="BoxLayout" boxLayoutAxis="Y" >
+  <component type="Container" name="TopCon" cloudDestinationProperty="TopCon" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+    <component type="SpanLabel" name="Spacing" cloudDestinationProperty="Spacing" >
+    </component>
+    <component type="SpanLabel" name="Infolbl" cloudDestinationProperty="Infolbl" >
+      <custom name="text" type="java.lang.String" value="Highscore List:" />
+    </component>
+  </component>
+  <component type="Container" name="HighscoreListCon" cloudDestinationProperty="HighscoreListCon" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+    <component type="MultiList" name="MultiList" cloudDestinationProperty="MultiList" >
+    </component>
+    <component type="SpanLabel" name="Spacing" cloudDestinationProperty="SpanLabel" >
+    </component>
+    <component type="MultiList" name="HighscoreList" cloudDestinationProperty="MultiList" itemGap="5" >
+      <custom name="name1" type="java.lang.String" value="Line1" />
+      <custom name="name2" type="java.lang.String" value="Line2" />
+      <custom name="name3" type="java.lang.String" value="Line3" />
+      <custom name="Placeholder" />
+    </component>
+  </component>
+  <component type="Container" name="LowCon" cloudDestinationProperty="LowCon" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+    <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel1" >
+      <custom name="text" type="java.lang.String" value="Version 1.0" />
+    </component>
+    <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel" >
+      <custom name="text" type="java.lang.String" value="Non existant Copyright claimed by ... " />
+    </component>
+    <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel2" >
+      <custom name="text" type="java.lang.String" value="Created by ..." />
+    </component>
+  </component>
+  <component type="Button" name="ExitBtn" cloudDestinationProperty="Button" text="Exit Game" >
+  </component>
+</component>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Game" cloudDestinationProperty="Game" >
+  <component type="Container" name="GameScreen" cloudDestinationProperty="GameScreen" layout="BoxLayout" boxLayoutAxis="Y" >
+    <component type="Container" name="TopCon" cloudDestinationProperty="TopCon" rtl="true" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+      <component type="SpanLabel" name="Usernamelbl" cloudDestinationProperty="Spacing" >
+        <custom name="text" type="java.lang.String" value="Username:" />
+      </component>
+      <component type="SpanLabel" name="Counterlbl" cloudDestinationProperty="Counterlbl" >
+        <custom name="text" type="java.lang.String" value="Sample" />
+        <custom name="icon" type="com.codename1.ui.Image" value="CashBundleSmall.JPG" />
+      </component>
+    </component>
+    <component type="Container" name="MidCon" cloudDestinationProperty="MidCon" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Container" name="MTopCon" cloudDestinationProperty="MidCon" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+        <component type="SpanLabel" name="Activelbl" cloudDestinationProperty="Activelbl" >
+          <custom name="text" type="java.lang.String" value="Active Income per Click:" />
+        </component>
+        <component type="SpanLabel" name="ActivePlaceholderlbl" cloudDestinationProperty="ActivePlaceholderlbl" >
+          <custom name="text" type="java.lang.String" value="Sample" />
+        </component>
+        <component type="SpanLabel" name="Passivelbl" cloudDestinationProperty="Passivelbl" >
+          <custom name="text" type="java.lang.String" value="Passive Income per Second:" />
+        </component>
+        <component type="SpanLabel" name="PassivePlaceholderlbl" cloudDestinationProperty="PassivePlaceholderlbl" >
+          <custom name="text" type="java.lang.String" value="Sample" />
+        </component>
+      </component>
+      <component type="Container" name="MMainCon" cloudDestinationProperty="MMainCon" rtl="false" scrollableY="false" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Button" name="Clickerbtn" cloudDestinationProperty="Button" text="" icon="Unbenannt.JPG" gap="0" >
+        </component>
+        <component type="Button" name="Payoutbtn" cloudDestinationProperty="Payoutbtn" text="Payout" >
+        </component>
+        <component type="Container" name="UpgradesList" cloudDestinationProperty="UpgradesList" scrollVisible="false" snapToGrid="true" scrollableY="false" layout="BoxLayout" boxLayoutAxis="Y" >
+          <component type="Tabs" name="Tabs" cloudDestinationProperty="Tabs" >
+            <custom name="titles" type="java.lang.String" array="true" dimensions="1" >
+              <str>Active Upgrades</str>
+              <str>Passive Upgrades</str>
+            </custom>
+            <component type="Container" name="ActiveUpgrades" tabTitle="Active Upgrades" cloudDestinationProperty="UpgradesCon" scrollVisible="false" snapToGrid="true" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+              <component type="SpanLabel" name="Placeholderlbl" cloudDestinationProperty="SpanLabel" >
+                <custom name="text" type="java.lang.String" value="Upgrade:" />
+              </component>
+              <component type="SpanLabel" name="Placeholderlbl" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="Description:" />
+              </component>
+              <component type="SpanLabel" name="Placeholderlbl" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="Price:" />
+              </component>
+              <component type="SpanLabel" name="Spacing" cloudDestinationProperty="Spacing" >
+              </component>
+              <component type="SpanLabel" name="UpgradeName1" cloudDestinationProperty="SpanLabel" >
+                <custom name="text" type="java.lang.String" value="Moneyclip" />
+              </component>
+              <component type="SpanLabel" name="UpgradeDesc1" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="An additonal helping hand for active income." />
+              </component>
+              <component type="SpanLabel" name="UpgradePrice1" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="5" />
+              </component>
+              <component type="MultiButton" name="UpgradeOneBuy" cloudDestinationProperty="UpgradeOneBuy" >
+                <custom name="line1" type="java.lang.String" value="Buy" />
+              </component>
+              <component type="SpanLabel" name="UpgradeName3" cloudDestinationProperty="SpanLabel" >
+                <custom name="text" type="java.lang.String" value="Moneystack" />
+              </component>
+              <component type="SpanLabel" name="UpgradeDesc3" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="Upgrade your Tappers and get  additional active Income." />
+              </component>
+              <component type="SpanLabel" name="UpgradePrice3" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="50" />
+              </component>
+              <component type="MultiButton" name="UpgradeThreeBuy" cloudDestinationProperty="UpgradeOneBuy" >
+                <custom name="line1" type="java.lang.String" value="Buy" />
+              </component>
+            </component>
+            <component type="Container" name="PassiveUpgrades" tabTitle="Passive Upgrades" cloudDestinationProperty="UpgradesCon" scrollVisible="false" snapToGrid="true" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+              <component type="SpanLabel" name="Placeholderlbl" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="Upgrade:" />
+              </component>
+              <component type="SpanLabel" name="Placeholderlbl" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="Description:" />
+              </component>
+              <component type="SpanLabel" name="Placeholderlbl" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="Price:" />
+              </component>
+              <component type="SpanLabel" name="Spacing" cloudDestinationProperty="Spacing" >
+              </component>
+              <component type="SpanLabel" name="UpgradeName2" cloudDestinationProperty="SpanLabel" >
+                <custom name="text" type="java.lang.String" value="Salesman" />
+              </component>
+              <component type="SpanLabel" name="UpgradeDesc2" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="Salesmen generate passive Income so you don't have to move a muscle while counting your money." />
+              </component>
+              <component type="SpanLabel" name="UpgradePrice2" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="25" />
+              </component>
+              <component type="MultiButton" name="UpgradeTwoBuy" cloudDestinationProperty="UpgradeOneBuy" >
+                <custom name="line1" type="java.lang.String" value="Buy" />
+              </component>
+              <component type="SpanLabel" name="UpgradeName4" cloudDestinationProperty="SpanLabel" >
+                <custom name="text" type="java.lang.String" value="Manager" />
+              </component>
+              <component type="SpanLabel" name="UpgradeDesc4" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="Manager generate even more passive Income." />
+              </component>
+              <component type="SpanLabel" name="UpgradePrice4" cloudDestinationProperty="Placeholderlbl" >
+                <custom name="text" type="java.lang.String" value="100" />
+              </component>
+              <component type="MultiButton" name="UpgradeFourBuy" cloudDestinationProperty="UpgradeOneBuy" >
+                <custom name="line1" type="java.lang.String" value="Buy" />
+              </component>
+            </component>
+          </component>
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="LowCon" cloudDestinationProperty="LowCon" scrollVisible="true" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Button" name="Optionslbl" cloudDestinationProperty="Optionslbl" text="Options" gap="0" >
+      </component>
+      <component type="Button" name="Exitlbl" cloudDestinationProperty="Optionslbl" text="Exit" gap="0" >
+      </component>
+      <component type="Container" name="Container" cloudDestinationProperty="Container" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+        <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel" >
+          <custom name="text" type="java.lang.String" value="Created by " />
+        </component>
+        <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel1" >
+          <custom name="text" type="java.lang.String" value="Non existant Copyright claimed by ... &#xa9;" />
+        </component>
+        <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel2" >
+          <custom name="text" type="java.lang.String" value="Version 1.0" />
+        </component>
+      </component>
+    </component>
+  </component>
+</component>

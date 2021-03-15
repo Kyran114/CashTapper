@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="GameScreen" cloudDestinationProperty="GameScreen" uiid="Form" layout="BoxLayout" boxLayoutAxis="Y" >
+  <component type="Container" name="ConTop" cloudDestinationProperty="ConTop" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+    <component type="SpanLabel" name="spacing" cloudDestinationProperty="spacing" >
+    </component>
+    <component type="SpanLabel" name="Valuelbl" cloudDestinationProperty="CHFlbl" >
+      <custom name="text" type="java.lang.String" value="1000" />
+      <custom name="icon" type="com.codename1.ui.Image" value="CashBundleSmall.JPG" />
+    </component>
+  </component>
+  <component type="Container" name="ConMid" cloudDestinationProperty="ConMid" layout="BoxLayout" boxLayoutAxis="Y" >
+    <component type="Container" name="InfoContainer" cloudDestinationProperty="Container" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="6" >
+      <component type="Label" name="spacing1" cloudDestinationProperty="Activelbl" text="" >
+      </component>
+      <component type="Label" name="Activelbl" cloudDestinationProperty="Activelbl" text="Active Income:" >
+      </component>
+      <component type="Label" name="lblActVal" cloudDestinationProperty="lblActVal" text="Placeholder" >
+      </component>
+      <component type="Label" name="Passivlbl" cloudDestinationProperty="Passivlbl" text="Passiv Income:" >
+      </component>
+      <component type="Label" name="lblPassVal" cloudDestinationProperty="lblPassVal" text="Placeholder" >
+      </component>
+      <component type="Label" name="spacing" cloudDestinationProperty="Activelbl" text="" >
+      </component>
+    </component>
+    <component type="Container" name="GameContainer" cloudDestinationProperty="Container" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="1" >
+      <component type="Label" name="Iconlbl" cloudDestinationProperty="Iconlbl" text="" icon="Unbenannt.JPG" verticalAlignment="4" textPosition="2" >
+        <custom name="maskName" type="java.lang.String" value="" />
+      </component>
+    </component>
+  </component>
+  <component type="Container" name="LowCon" cloudDestinationProperty="LowCon" layout="FlowLayout" flowLayoutFillRows="false" flowLayoutAlign="1" flowLayoutValign="0" >
+    <component type="Label" name="Verslbl" cloudDestinationProperty="CRlbl" text="Version 1.0" >
+    </component>
+    <component type="Label" name="CRlbl" cloudDestinationProperty="CRlbl" text="Non existant Copyright claimed by ... &#xa9;" >
+    </component>
+    <component type="Label" name="CBlbl" cloudDestinationProperty="CBlbl" text="Created by " >
+    </component>
+  </component>
+</component>

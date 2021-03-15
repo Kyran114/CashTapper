@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Options" cloudDestinationProperty="Options" >
+  <component type="Container" name="BackgroundCon" cloudDestinationProperty="BackgroundCon" scrollVisible="false" layout="BoxLayout" boxLayoutAxis="Y" >
+    <component type="Container" name="TopCon" cloudDestinationProperty="TopCon" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+      <component type="SpanLabel" name="Spacing" cloudDestinationProperty="Spacing" >
+      </component>
+      <component type="SpanLabel" name="SpanLabel" cloudDestinationProperty="SpanLabel" >
+        <custom name="icon" type="com.codename1.ui.Image" value="CashBundle.JPG" />
+      </component>
+    </component>
+    <component type="Container" name="OptionCon" cloudDestinationProperty="OptionCon" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Container" name="Volume" cloudDestinationProperty="Volume" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+        <component type="SpanLabel" name="Volumelbl" cloudDestinationProperty="Volumelbl" >
+          <custom name="text" type="java.lang.String" value="Volume" />
+        </component>
+        <component type="MultiButton" name="LowerVol" cloudDestinationProperty="LowerVol" >
+          <custom name="line1" type="java.lang.String" value="-" />
+        </component>
+        <component type="MultiButton" name="AddVol" cloudDestinationProperty="AddVol" >
+          <custom name="line1" type="java.lang.String" value="+" />
+        </component>
+      </component>
+      <component type="Container" name="Music" cloudDestinationProperty="Volume" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+        <component type="SpanLabel" name="Musiclbl" cloudDestinationProperty="Volumelbl" >
+          <custom name="text" type="java.lang.String" value="Music" />
+        </component>
+        <component type="MultiButton" name="LowerMusc" cloudDestinationProperty="LowerVol" >
+          <custom name="line1" type="java.lang.String" value="-" />
+        </component>
+        <component type="MultiButton" name="AddMusc" cloudDestinationProperty="AddVol" >
+          <custom name="line1" type="java.lang.String" value="+" />
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="LowCon" cloudDestinationProperty="LowCon" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Button" name="Returnbtn" cloudDestinationProperty="Returnbtn" text="Return" >
+      </component>
+      <component type="Button" name="Exitbtn" cloudDestinationProperty="Exitbtn" text="Exit" >
+      </component>
+      <component type="Container" name="Container" cloudDestinationProperty="Container" >
+        <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel2" >
+          <custom name="text" type="java.lang.String" value="Version 1.0" />
+        </component>
+        <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel1" >
+          <custom name="text" type="java.lang.String" value="Non existant Copyright claimed by ... &#xa9;" />
+        </component>
+        <component type="SpanLabel" name="lbl" cloudDestinationProperty="SpanLabel3" >
+          <custom name="text" type="java.lang.String" value="Created by " />
+        </component>
+      </component>
+    </component>
+  </component>
+</component>

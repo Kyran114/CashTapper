@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Main" cloudDestinationProperty="Main" layout="BoxLayout" boxLayoutAxis="Y" title="" >
+  <component type="Container" name="BackgroundCon" cloudDestinationProperty="BackgroundCon" layout="BoxLayout" boxLayoutAxis="Y" >
+    <component type="Container" name="TopCon" cloudDestinationProperty="TopCon" snapToGrid="false" scrollableX="false" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="3" >
+      <component type="SpanLabel" name="spacing" cloudDestinationProperty="SpanLabel1" >
+      </component>
+      <component type="SpanLabel" name="GameTitlelbl" cloudDestinationProperty="SpanLabel" rtl="true" >
+        <custom name="text" type="java.lang.String" value="                                 Cash Tapper" />
+        <custom name="icon" type="com.codename1.ui.Image" value="CashBundle.JPG" />
+      </component>
+    </component>
+    <component type="Container" name="MidCon" cloudDestinationProperty="MidCon" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Container" name="UserInt" cloudDestinationProperty="UserInt" layout="GridLayout" gridLayoutRows="1" gridLayoutColumns="4" >
+        <component type="SpanLabel" name="Spacing1" cloudDestinationProperty="Spacing" >
+        </component>
+        <component type="TextField" name="Logintxtfield" cloudBoundProperty="text" cloudDestinationProperty="TextField" text="Enter Username" >
+        </component>
+        <component type="MultiButton" name="MultiButton" cloudDestinationProperty="MultiButton" >
+          <custom name="line1" type="java.lang.String" value="Login" />
+        </component>
+      </component>
+      <component type="SpanLabel" name="SpanLabel" cloudDestinationProperty="SpanLabel" >
+      </component>
+      <component type="Button" name="StartBtn" cloudDestinationProperty="StartBtn" text="Start" >
+      </component>
+      <component type="SpanLabel" name="SpanLabel1" cloudDestinationProperty="SpanLabel1" >
+      </component>
+      <component type="Button" name="ExitBtn" cloudDestinationProperty="ExitBtn" text="Exit" >
+      </component>
+      <component type="SpanLabel" name="SpanLabel2" cloudDestinationProperty="SpanLabel2" >
+      </component>
+    </component>
+    <component type="Container" name="LowCon" cloudDestinationProperty="LowCon" layout="FlowLayout" flowLayoutFillRows="false" flowLayoutAlign="1" flowLayoutValign="0" >
+      <component type="Label" name="Verslbl" cloudDestinationProperty="CRlbl" text="Version 1.0" >
+      </component>
+      <component type="Label" name="CRlbl" cloudDestinationProperty="CRlbl" text="Non existant Copyright claimed by ... &#xa9;" >
+      </component>
+      <component type="Label" name="CBlbl" cloudDestinationProperty="CBlbl" text="Created by " >
+      </component>
+    </component>
+  </component>
+</component>
